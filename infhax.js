@@ -2,7 +2,6 @@ var gameCode = $nuxt.$children.find(l => {return l._uid == "6"}).$children.find(
 
 if(typeof(gameCode) === "undefined") {
 	console.error("Couldn't get game code. Please wait for the script to be updated!")
-	return
 }
 
 var addNewElement = (name, emoji, disc=false) => {
