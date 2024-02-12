@@ -4,7 +4,7 @@ if(typeof(gameCode) === "undefined") {
 	console.error("Couldn't get game code. DON'T use the script for now; wait for it to be updated!")
 }
 
-var addNewElement = (name, emoji, disc=false) => {
+var addNewElement = (name, emoji, firstDiscovery=false) => {
 	gameCode.elements.push({
 		emoji: emoji,
 		text: name,
